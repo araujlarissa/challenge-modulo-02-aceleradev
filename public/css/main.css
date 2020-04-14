@@ -24,6 +24,11 @@ body {
 	background: #fafafa;
 }
 
+ul {
+	list-style: none;
+	display: flex;
+}
+
 .container {
 	margin: 0 auto;
 	position: relative;
@@ -60,4 +65,39 @@ header {
 .nav__direct {
 	font-size: 1.6rem;
 	color: #000;
+}
+
+.stories {
+	display: flex;
+
+	width: 100%;
+	padding: 2.4rem 0;
+}
+
+.stories__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 78px;
+	width: 78px;
+	margin: 0 8px;
+	
+  border-radius: 50%;
+
+	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+}
+
+.stories__thumb {
+	height: 72px;
+	width: 72px;
+
+	border-radius: 50%;
+	border: 2px solid #fff;
+
+	overflow: hidden;
+}
+
+.stories__thumb img {
+	height: 100%;
 }
