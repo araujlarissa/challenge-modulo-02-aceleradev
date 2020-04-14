@@ -50,6 +50,11 @@ body {
 
 /* header */
 header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
 	background: var(--background-secondary);
 
 	height: 54px;
@@ -78,6 +83,7 @@ header {
 	display: flex;
 	width: 100%;
 	padding: 1.2rem 0;
+	margin-top: 54px;
 }
 
 .stories__item {
