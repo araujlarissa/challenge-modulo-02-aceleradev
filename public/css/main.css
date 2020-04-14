@@ -3,13 +3,61 @@
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important; 
+	height: 100vh;
+}
 
+html {
+	font-size: 62.5%;
+}
 
+body {
+	font-size: 1.2rem;
+	color: #000;
+	background: #fafafa;
+}
 
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+}
 
+/* header */
+header {
+	background: #fff;
 
+	height: 54px;
+	width: 100%;
+	padding: 1.4rem 0;
 
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+/* nav */
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__logo {
+	height: 3rem;
+}
+
+.nav__logo img {
+	height: 100%;
+}
+
+.nav__direct {
+	font-size: 1.6rem;
+	color: #000;
+}
