@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Instagram Codenation</title>
     <meta name="description" content="" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css" />
@@ -13,9 +13,9 @@
   </head>
   <body>
     <header>
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img src="./img/instagram-logo.svg" alt="logo" />
+      <nav class="nav container flex-between">
+        <a href="#" class="nav__logo-container">
+          <img class="nav__logo" src="./img/instagram-logo.svg" alt="logo" />
         </a>
         <a href="#" class="nav__direct">
           <i class="far fa-paper-plane"></i>
@@ -26,20 +26,20 @@
 		<div class="container">
 			<section class="stories">
 				<a href="#" class="stories__item">
-					<div class="stories__thumb">
-						<img src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
+					<div class="stories__profile">
+						<img class="stories__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
 					</div>
 				</a>
 
 				<a href="#" class="stories__item">
-					<div class="stories__thumb">
-						<img src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
+					<div class="stories__profile">
+						<img class="stories__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
 					</div>
 				</a>
 
 				<a href="#" class="stories__item">
-					<div class="stories__thumb">
-						<img src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
+					<div class="stories__profile">
+						<img class="stories__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
 					</div>
 				</a>
 			</section>
@@ -48,12 +48,12 @@
 		<div class="container">
 			<section class="posts">
 				<div class="posts__item">
-					<div class="item__header">
-						<div class="item__profile">
-							<div class="profile__thumb">
-								<img src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
+					<div class="item__header flex-between">
+						<div class="item__profile flex-between">
+							<div class="profile__thumb-container">
+								<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
 							</div>
-							<span>Mestre Yoda</span>
+							<span class="profile__name">Mestre Yoda</span>
 						</div>
 
 						<a href="#" class="item__menu">
@@ -62,23 +62,97 @@
 					</div>
 
 					<figure class="item__content">
-						<img src="./img/profiles/yoda/yoda-1.jpg" alt="yoda post">
+						<img class="content__thumb" src="./img/profiles/yoda/yoda-1.jpg" alt="yoda post">
 					</figure>
 
-					<div class="item__footer">
-						<div class="item__control">
-							<i class="far fa-heart"></i>
-							<i class="far fa-comment"></i>
+					<div class="item__controls">
+						<div class="controls__group">
+							<i class="far fa-heart controls__icon"></i>
+							<i class="far fa-comment controls__icon"></i>
 						</div>
 
-						<i class="far fa-bookmark"></i>
+						<i class="far fa-bookmark controls__icon"></i>
 					</div>
 
-					<div class="item__comments">
-						<div class="profile__thumb comments__thumb">
-							<img src="./img/profiles/domino/domino-profile.jpg" alt="domino">
+					<div class="item__likes">
+						<div class="likes__thumb-container">
+							<img class="likes__thumb" src="./img/profiles/domino/domino-profile.jpg" alt="domino">
 						</div>
-						<p>
+						<p class="likes__name">
+							curtido por <strong>Domino</strong> e outras <strong>7 pessoas</strong>
+						</p>
+					</div>
+				</div>
+
+				<div class="posts__item">
+					<div class="item__header flex-between">
+						<div class="item__profile flex-between">
+							<div class="profile__thumb-container">
+								<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
+							</div>
+							<span class="profile__name">Mestre Yoda</span>
+						</div>
+
+						<a href="#" class="item__menu">
+							<i class="fas fa-ellipsis-h"></i>
+						</a>
+					</div>
+
+					<figure class="item__content">
+						<img class="content__thumb" src="./img/profiles/yoda/yoda-1.jpg" alt="yoda post">
+					</figure>
+
+					<div class="item__controls">
+						<div class="controls__group">
+							<i class="far fa-heart controls__icon"></i>
+							<i class="far fa-comment controls__icon"></i>
+						</div>
+
+						<i class="far fa-bookmark controls__icon"></i>
+					</div>
+
+					<div class="item__likes">
+						<div class="likes__thumb-container">
+							<img class="likes__thumb" src="./img/profiles/domino/domino-profile.jpg" alt="domino">
+						</div>
+						<p class="likes__name">
+							curtido por <strong>Domino</strong> e outras <strong>7 pessoas</strong>
+						</p>
+					</div>
+				</div>
+
+				<div class="posts__item">
+					<div class="item__header flex-between">
+						<div class="item__profile flex-between">
+							<div class="profile__thumb-container">
+								<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="profile yoda">
+							</div>
+							<span class="profile__name">Mestre Yoda</span>
+						</div>
+
+						<a href="#" class="item__menu">
+							<i class="fas fa-ellipsis-h"></i>
+						</a>
+					</div>
+
+					<figure class="item__content">
+						<img class="content__thumb" src="./img/profiles/yoda/yoda-1.jpg" alt="yoda post">
+					</figure>
+
+					<div class="item__controls">
+						<div class="controls__group">
+							<i class="far fa-heart controls__icon"></i>
+							<i class="far fa-comment controls__icon"></i>
+						</div>
+
+						<i class="far fa-bookmark controls__icon"></i>
+					</div>
+
+					<div class="item__likes">
+						<div class="likes__thumb-container">
+							<img class="likes__thumb" src="./img/profiles/domino/domino-profile.jpg" alt="domino">
+						</div>
+						<p class="likes__name">
 							curtido por <strong>Domino</strong> e outras <strong>7 pessoas</strong>
 						</p>
 					</div>
