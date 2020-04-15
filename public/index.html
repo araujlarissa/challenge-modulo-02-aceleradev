@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <title>Instagram Codenation</title>
     <meta name="description" content="" />
-    <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png" /> -->
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
 		
 		<script src="https://unpkg.com/feather-icons"></script>
 		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>		
@@ -28,7 +27,7 @@
 					</a>
 
 					<a href="#" class="header__icon">
-						<i class="icon icon--rotate" data-feather="send"></i>
+						<i class="icon icon--send" data-feather="send"></i>
 					</a>
 
 					<a href="#" class="header__icon">
@@ -48,35 +47,36 @@
 		
 		<div class="container">
 			<section class="stories">
-				<div class="stories__item">
-					<a href="#" class="stories__background">
-						<div class="profile profile--stories">
+				<a href="#" class="stories__profile stories__profile--new">
+					<div class="stories__position">
+						<div class="profile profile--new">
 							<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="yoda">
 						</div>
-					</a>
-
-					<span class="stories__username">yoda</span>
-				</div>
-
-				<div class="stories__item">
-					<a href="#" class="stories__background stories__background--new">
-						<div class="profile profile--stories">
-							<img class="profile__thumb" src="./img/profiles/gamora/gamora-profile.jpg" alt="gamora">
+						<div class="profile__plus">
+							<div class="plus__background">
+								<i class="plus__icon" data-feather="plus"></i>
+							</div>
 						</div>
-					</a>
+					</div>
+				</a>
 
-					<span class="stories__username">gamora</span>
-				</div>
+				<a href="#" class="stories__profile">
+					<div class="profile profile--stories">
+						<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="yoda">
+					</div>
+				</a>
 
-				<div class="stories__item">
-					<a href="#" class="stories__background">
-						<div class="profile profile--stories">
-							<img class="profile__thumb" src="./img/profiles/black-panther/black-panther-profile.jpg" alt="black panther">
-						</div>
-					</a>
+				<a href="#" class="stories__profile">
+					<div class="profile profile--stories">
+						<img class="profile__thumb" src="./img/profiles/gamora/gamora-profile.jpg" alt="gamora">
+					</div>
+				</a>
 
-					<span class="stories__username">t'challa</span>
-				</div>
+				<a href="#" class="stories__profile">
+					<div class="profile profile--stories">
+						<img class="profile__thumb" src="./img/profiles/black-panther/black-panther-profile.jpg" alt="black panther">
+					</div>
+				</a>
 			</section>
 		</div>
 
@@ -85,7 +85,7 @@
 				<div class="posts__item">
 					<div class="item__header flex-between">
 						<div class="item__profile flex-between">
-							<a href="#" class="stories__background stories__background--post">
+							<a href="#" class="stories__profile stories__profile--post">
 								<div class="profile profile--post">
 									<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="yoda">
 								</div>
@@ -105,8 +105,8 @@
 					<div class="item__controls">
 						<div class="controls__group">
 							<i class="icon" data-feather="heart"></i>
-							<i class="icon icon--invert" data-feather="message-circle"></i>
-							<i class="icon icon--rotate" data-feather="send"></i>
+							<i class="icon icon--comment" data-feather="message-circle"></i>
+							<i class="icon icon--send" data-feather="send"></i>
 						</div>
 
 						<i class="icon" data-feather="bookmark"></i>
@@ -135,14 +135,83 @@
 							<label>
 								<strong>gamora</strong> Não vejo a hora disso acabar!
 							</label>
-							<i class="icon icon--comment" data-feather="heart"></i>
+							<i class="icon icon--like" data-feather="heart"></i>
 						</div>
 
 						<div class="flex-between">
 							<label>
 								<strong>domino</strong> Seguimos na quarentena
 							</label>
-							<i class="icon icon--comment" data-feather="heart"></i>
+							<i class="icon icon--like" data-feather="heart"></i>
+						</div>
+					</div>
+
+					<div class="item__time">
+						<label>20 minutos atrás</label>
+					</div>
+				</div>
+				
+				<div class="posts__item">
+					<div class="item__header flex-between">
+						<div class="item__profile flex-between">
+							<a href="#" class="stories__profile stories__profile--post">
+								<div class="profile profile--post">
+									<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="yoda">
+								</div>
+							</a>
+							<span class="profile__name">Mestre Yoda</span>
+						</div>
+
+						<a href="#" class="item__menu">
+							<i class="icon" data-feather="more-horizontal"></i>
+						</a>
+					</div>
+
+					<figure class="item__content">
+						<img class="content__thumb" src="./img/profiles/yoda/yoda-1.jpg" alt="yoda post">
+					</figure>
+
+					<div class="item__controls">
+						<div class="controls__group">
+							<i class="icon" data-feather="heart"></i>
+							<i class="icon icon--comment" data-feather="message-circle"></i>
+							<i class="icon icon--send" data-feather="send"></i>
+						</div>
+
+						<i class="icon" data-feather="bookmark"></i>
+					</div>
+
+					<div class="item__likes">
+						<div class="profile profile--likes">
+							<img class="profile__thumb" src="./img/profiles/domino/domino-profile.jpg" alt="domino">
+						</div>
+
+						<label class="likes__name">
+							Curtido por <strong>Domino</strong> e outras <strong>7 pessoas</strong>
+						</label>
+					</div>
+
+					<div class="item__description">
+						<label>
+							<strong>yoda</strong> Vejo o fim do corona
+						</label>
+					</div>
+
+					<div class="item__comments">
+						<span class="comments__qtd">Ver todos os 10 comentários</span>
+						
+						<div class="flex-between">
+							<label>
+								<strong>gamora</strong> Não vejo a hora disso acabar!
+							</label>
+							<i class="icon icon--like" data-feather="heart"></i>
+						</div>
+
+						<div class="flex-between">
+							<label>
+								<strong>domino</strong> Seguimos na quarentena
+							</label>
+							<i class="icon icon--like" data-feather="heart"></i>
 						</div>
 					</div>
 
@@ -154,190 +223,73 @@
 				<div class="posts__item">
 					<div class="item__header flex-between">
 						<div class="item__profile flex-between">
-							<div class="profile__thumb-container">
-								<img class="profile__thumb" src="./img/profiles/gamora/gamora-profile.jpg" alt="gamora">
-							</div>
-							<span class="profile__name">Gamora Zen</span>
+							<a href="#" class="stories__profile stories__profile--post">
+								<div class="profile profile--post">
+									<img class="profile__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="yoda">
+								</div>
+							</a>
+							<span class="profile__name">Mestre Yoda</span>
 						</div>
 
 						<a href="#" class="item__menu">
-							<i class="fas fa-ellipsis-h"></i>
+							<i class="icon" data-feather="more-horizontal"></i>
 						</a>
 					</div>
 
 					<figure class="item__content">
-						<img class="content__thumb" src="./img/profiles/gamora/gamora-1.jpg" alt="gamora post">
+						<img class="content__thumb" src="./img/profiles/yoda/yoda-1.jpg" alt="yoda post">
 					</figure>
 
 					<div class="item__controls">
 						<div class="controls__group">
-							<i class="far fa-heart controls__icon"></i>
-							<i class="far fa-comment controls__icon"></i>
+							<i class="icon" data-feather="heart"></i>
+							<i class="icon icon--comment" data-feather="message-circle"></i>
+							<i class="icon icon--send" data-feather="send"></i>
 						</div>
 
-						<i class="far fa-bookmark controls__icon"></i>
+						<i class="icon" data-feather="bookmark"></i>
 					</div>
 
 					<div class="item__likes">
-						<div class="likes__thumb-container">
-							<img class="likes__thumb" src="./img/profiles/carol/carol-profile.jpg" alt="carol">
-						</div>
-						<p class="likes__name">
-							curtido por <strong>Carol Danvers</strong> e outras <strong>7 pessoas</strong>
-						</p>
-					</div>
-				</div>
-
-				<div class="posts__item">
-					<div class="item__header flex-between">
-						<div class="item__profile flex-between">
-							<div class="profile__thumb-container">
-								<img class="profile__thumb" src="./img/profiles/black-panther/black-panther-profile.jpg" alt="black panther">
-							</div>
-							<span class="profile__name">T'Challa</span>
+						<div class="profile profile--likes">
+							<img class="profile__thumb" src="./img/profiles/domino/domino-profile.jpg" alt="domino">
 						</div>
 
-						<a href="#" class="item__menu">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
+						<label class="likes__name">
+							Curtido por <strong>Domino</strong> e outras <strong>7 pessoas</strong>
+						</label>
 					</div>
 
-					<figure class="item__content">
-						<img class="content__thumb" src="./img/profiles/black-panther/black-panther-1.jpg" alt="black panther post">
-					</figure>
-
-					<div class="item__controls">
-						<div class="controls__group">
-							<i class="far fa-heart controls__icon"></i>
-							<i class="far fa-comment controls__icon"></i>
-						</div>
-
-						<i class="far fa-bookmark controls__icon"></i>
+					<div class="item__description">
+						<label>
+							<strong>yoda</strong> Vejo o fim do corona
+						</label>
 					</div>
 
-					<div class="item__likes">
-						<div class="likes__thumb-container">
-							<img class="likes__thumb" src="./img/profiles/bruce/bruce-profile.jpg" alt="bruce">
-						</div>
-						<p class="likes__name">
-							curtido por <strong>Bruce Wayne</strong> e outras <strong>7 pessoas</strong>
-						</p>
-					</div>
-				</div>
-
-				<div class="posts__item">
-					<div class="item__header flex-between">
-						<div class="item__profile flex-between">
-							<div class="profile__thumb-container">
-								<img class="profile__thumb" src="./img/profiles/carol/carol-profile.jpg" alt="carol">
-							</div>
-							<span class="profile__name">Carol Danvers</span>
+					<div class="item__comments">
+						<span class="comments__qtd">Ver todos os 10 comentários</span>
+						
+						<div class="flex-between">
+							<label>
+								<strong>gamora</strong> Não vejo a hora disso acabar!
+							</label>
+							<i class="icon icon--like" data-feather="heart"></i>
 						</div>
 
-						<a href="#" class="item__menu">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
+						<div class="flex-between">
+							<label>
+								<strong>domino</strong> Seguimos na quarentena
+							</label>
+							<i class="icon icon--like" data-feather="heart"></i>
+						</div>
 					</div>
 
-					<figure class="item__content">
-						<img class="content__thumb" src="./img/profiles/carol/carol-1.jpg" alt="carol post">
-					</figure>
-
-					<div class="item__controls">
-						<div class="controls__group">
-							<i class="far fa-heart controls__icon"></i>
-							<i class="far fa-comment controls__icon"></i>
-						</div>
-
-						<i class="far fa-bookmark controls__icon"></i>
-					</div>
-
-					<div class="item__likes">
-						<div class="likes__thumb-container">
-							<img class="likes__thumb" src="./img/profiles/yoda/yoda-profile.jpg" alt="yoda">
-						</div>
-						<p class="likes__name">
-							curtido por <strong>Mestre Yoda</strong> e outras <strong>7 pessoas</strong>
-						</p>
-					</div>
-				</div>
-
-				<div class="posts__item">
-					<div class="item__header flex-between">
-						<div class="item__profile flex-between">
-							<div class="profile__thumb-container">
-								<img class="profile__thumb" src="./img/profiles/domino/domino-1.jpg" alt="domino">
-							</div>
-							<span class="profile__name">Domino</span>
-						</div>
-
-						<a href="#" class="item__menu">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
-					</div>
-
-					<figure class="item__content">
-						<img class="content__thumb" src="./img/profiles/domino/domino-1.jpg" alt="domino post">
-					</figure>
-
-					<div class="item__controls">
-						<div class="controls__group">
-							<i class="far fa-heart controls__icon"></i>
-							<i class="far fa-comment controls__icon"></i>
-						</div>
-
-						<i class="far fa-bookmark controls__icon"></i>
-					</div>
-
-					<div class="item__likes">
-						<div class="likes__thumb-container">
-							<img class="likes__thumb" src="./img/profiles/black-panther/black-panther-profile.jpg" alt="black panther">
-						</div>
-						<p class="likes__name">
-							curtido por <strong>T'Challa</strong> e outras <strong>7 pessoas</strong>
-						</p>
-					</div>
-				</div>
-
-				<div class="posts__item">
-					<div class="item__header flex-between">
-						<div class="item__profile flex-between">
-							<div class="profile__thumb-container">
-								<img class="profile__thumb" src="./img/profiles/bruce/bruce-profile.jpg" alt="bruce">
-							</div>
-							<span class="profile__name">Bruce Wayne</span>
-						</div>
-
-						<a href="#" class="item__menu">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
-					</div>
-
-					<figure class="item__content">
-						<img class="content__thumb" src="./img/profiles/bruce/bruce-1.jpg" alt="bruce post">
-					</figure>
-
-					<div class="item__controls">
-						<div class="controls__group">
-							<i class="far fa-heart controls__icon"></i>
-							<i class="far fa-comment controls__icon"></i>
-						</div>
-
-						<i class="far fa-bookmark controls__icon"></i>
-					</div>
-
-					<div class="item__likes">
-						<div class="likes__thumb-container">
-							<img class="likes__thumb" src="./img/profiles/gamora/gamora-profile.jpg" alt="gamora">
-						</div>
-						<p class="likes__name">
-							curtido por <strong>Gamora Zen</strong> e outras <strong>7 pessoas</strong>
-						</p>
+					<div class="item__time">
+						<label>20 minutos atrás</label>
 					</div>
 				</div>
 			</section>
 		</div>
-
 		<script>
 			feather.replace()
 		</script>
