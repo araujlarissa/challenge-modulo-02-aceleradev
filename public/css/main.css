@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 *,
 *:after,
@@ -9,9 +10,10 @@
 :root {
 	--background: #fafafa;
 	--background-secondary: #fff;
-	--text: #000;
-	--text-secondary: #333;
+	--text: #333;
+	--text-secondary: #999;
 	--border: rgba(0, 0, 0, 0.1);
+	--blue: #03a1fc;
 }
 
 html,
@@ -29,7 +31,7 @@ html {
 
 body {
 	font-size: 1.2rem;
-	color: var(--text-secondary);
+	color: var(--text);
 
 	background: var(--background);
 }
@@ -56,7 +58,7 @@ body {
 	width: 24px;
   height: 24px;
   stroke: var(--text);
-  stroke-width: 1.2;
+  stroke-width: 1.3; 
 }
 
 .icon--send {
@@ -68,14 +70,20 @@ body {
 	transform: rotateY(180deg);
 }
 
-/* storie profile */
+.icon--like {
+	height: 12px;
+	width: 12px;
+	stroke: var(--text-secondary);
+}
+
+/* storie profile (background linear) */
 .stories__profile {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	height: 56px; /*54*/
-	width: 56px; 
+	height: 58px; 
+	width: 58px; 
 	margin: 0 8px;
 	
   border-radius: 50%;
@@ -93,6 +101,7 @@ body {
 }
 
 .profile__thumb {
+	height: 100%;
 	width: 100%;
 }
 
@@ -144,12 +153,8 @@ header {
 	margin-top: 54px;
 }
 
-.stories__item {
-	text-align: center;
-}
-
 .stories__profile--new {
-	background: #fff;
+	background: var(--background-secondary);
 }
 
 .stories__position {
@@ -158,8 +163,8 @@ header {
 }
 
 .profile--new {
-	height: 54px;
-	width: 54px;
+	height: 52px;
+	width: 52px;
 }
 
 .profile__plus {
@@ -177,7 +182,7 @@ header {
 
 	border-radius: 50%;
 
-	background: #fff;
+	background: var(--background-secondary);
 }
 
 .plus__background {
@@ -185,7 +190,7 @@ header {
 	justify-content: center;
 	align-items: center;
 
-	background: #03a1fc;
+	background: var(--blue);
 	height: 14px;
 	width: 14px;;
 
@@ -195,16 +200,16 @@ header {
 .plus__icon {
 	width: 15px;
   height: 15px;
-	stroke: #fff;
-	stroke-width: 2;
-	padding: 1.3px;
+	stroke: var(--background-secondary);
+	stroke-width: 3;
+	padding: 1.2px;
 }
 
 .profile--stories {
 	height: 52px;
 	width: 52px;
 
-	border: 1.6px solid var(--background-secondary);
+	border: 2px solid var(--background-secondary);
 }
 
 /* posts */
@@ -236,7 +241,7 @@ header {
 	height: 40px;
 	width: 40px;
 
-	border: 1.6px solid var(--background-secondary);
+	border: 2px solid var(--background-secondary);
 }
 
 .profile__name {
@@ -246,7 +251,7 @@ header {
 
 .item__menu {
 	font-size: 1.6rem;
-	color: #333;
+	color: var(--text);
 }
 
 /* post content */
@@ -265,7 +270,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 
-	padding: 5px 10px;
+	padding: 4px 10px;
 }
 
 /* post likes */
@@ -278,8 +283,8 @@ header {
 }
 
 .profile--likes {
-	height: 20px;
-	width: 20px;
+	height: 16px;
+	width: 16px;
 }
 
 .likes__name {
@@ -300,26 +305,30 @@ header {
 }
 
 .comments__qtd {
-	color: #999;
-}
-
-.icon--like {
-	height: 12px;
-	width: 12px;
-	stroke: #999;
+	color: var(--text-secondary);
 }
 
 /* post time */
 .item__time {
-	color: #999;
-	font-size: 1.2rem;
+	color: var(--text-secondary);
+	font-size: 0.9rem;
+	font-weight: 400;
+	text-transform: uppercase;
 
 	padding: 0 10px;
 	margin-bottom: 8px;
 }
 
+.item__add-comment {
+	display: none;
+}
+
 /* media queries */
 @media (min-width: 768px) {
+	body {
+		font-size: 1.4rem;
+	}
+
 	.container {
 		max-width: 768px;
 	}
@@ -327,4 +336,126 @@ header {
 	.header__icon {
 		margin-left: 18px;
 	}
+	
+	/* new storie */
+	.profile--new {
+		height: 62px;
+		width: 62px;
+	}
+
+	/* stories */
+	.stories__profile {
+		height: 68px; 
+		width: 68px; 
+	}
+
+	.profile--stories {
+		height: 62px;
+		width: 62px;
+	}
+
+	/* post */
+	.stories__profile--post {
+		height: 46px;
+		width: 46px;
+	}
+
+	.profile--post {
+		height: 42px;
+		width: 42px;
+	}
+
+	.item__header {
+		padding: 10px 16px;
+	}
+
+	.profile--likes {
+		height: 20px;
+		width: 20px;
+	}
+
+	.item__controls {
+		padding: 5px 16px;
+	}
+	
+	.item__likes {
+		padding: 0 16px;
+		font-size: 1.4rem;
+		margin-bottom: 8px;
+	}
+	
+	.item__description,
+	.item__comments {
+		padding: 0 16px;
+		line-height: 2.4rem;
+	}
+
+	.comments__qtd {
+		font-size: 1.4rem;
+	}
+
+	.item__time {
+		font-size: 1rem;
+		line-height: 2.2rem;
+	
+		padding: 0 16px;
+	}
+
+	/* post add comment (deixa de ser display:none) */
+	.item__add-comment {
+		display: flex;
+
+		padding: 8px 16px;
+
+		border-top: solid 1px var(--border);
+	}
+
+	.add-comment__input {
+		border: 0;
+		width: 100%;
+		font-size: 1.4rem;
+		color: var(--text);
+		padding: 8px 0;
+	}
+
+	/* altera cor da fonte do placeholder */
+	.add-comment__input::-webkit-input-placeholder {
+		color: var(--text-secondary);
+		font-size: 1.4rem;
+	 }
+
+	 .add-comment__input::-moz-placeholder {
+		color: var(--text-secondary);
+		font-size: 1.4rem;
+	 }
+
+	 .add-comment__input:-moz-placeholder {
+		color: var(--text-secondary);
+		font-size: 1.4rem;
+	 }
+
+	 .add-comment__input:-ms-input-placeholder {
+		color: var(--text-secondary);
+		font-size: 1.4rem;
+	 }
+
+	 .add-comment__btn {
+		text-decoration: none;
+		cursor: default;
+		color: var(--blue);
+		font-weight: 600;
+		margin-left: 8px;
+		opacity: 0.3;
+		transition: all 0.2s;
+	}
+
+	 .add-comment__input:focus {
+		outline: none !important;
+    border: 0;
+    box-shadow: none;
+	 }
+
+	 .add-comment__input:focus:hover + .add-comment__btn{
+		opacity: 1;
+	 } 
 }
