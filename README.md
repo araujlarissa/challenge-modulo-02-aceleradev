@@ -10,7 +10,7 @@
 Desenvolver uma versão **mobile first** do Instagram utilizando apenas **HTML5** e **CSS3**.
 
 > **Preview:**
-> [Instagram Codenation](https://aceleradev-react.netlify.com/aula-02/public)
+> [Instagram Codenation](https://challenge-codenation-instagram.netlify.app)
 
 <p align="center">
   <img alt="project" src="./assets/challenge-modulo-02.gif" />
